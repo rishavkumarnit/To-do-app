@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center font-bold text-3xl mt-5">To do app</h1>
+
+      <form action="" class="flex mt-10 flex-col" id="new-task-form">
+        <div class="flex flex-col ml-25 gap-2">
+          <label for="task" class="text-sm font-medium">Add task</label>
+          <input
+            id="new-task-input"
+            type="text"
+            placeholder="Enter your task"
+            class="border w-full border-gray-300 rounded-sm px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <input
+          type="submit"
+          class="bg-green-600 w-18 h-8 ml-25 mt-3 rounded-sm shadow-md cursor-pointer border hover:border border-green-700 hover:border-green-900"
+          id="new-task-submit"
+        />
+      </form>
+
+      <div class="ml-25 mt-10 class-list">
+        <h1 class="text-2xl font-bold">Tasks</h1>
+
+        <div class="tasks"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
