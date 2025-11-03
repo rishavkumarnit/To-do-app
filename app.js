@@ -40,6 +40,13 @@ form.addEventListener("submit", (e) => {
   task.appendChild(content);
   tasks.appendChild(task);
 
+  if (tasks.childElementCount >= 5) {
+    alert("it's just a play ground !! 😁. Can't add more task.");
+    tasks.innerHTML = "";
+    input.value = "";
+    return;
+  }
+
   const taskActions = document.createElement("div");
   taskActions.classList.add("actions", "mt-2");
   const taskEdit = document.createElement("button");
